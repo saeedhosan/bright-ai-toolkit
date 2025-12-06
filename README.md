@@ -47,7 +47,7 @@ The platform is built on the **Laravel React Starter Kit** base.
 | :--- | :--- | :--- |
 | **Backend** | PHP 8.2+, Laravel 12.x | `laravel/framework: ^12.0` |
 | **Frontend** | React, Inertia.js | `inertiajs/inertia-laravel: ^2.0` |
-| **Database** | MySQL or PostgreSQL | *(not specified in composer)* |
+| **Database** | MySQL or PostgreSQL |  |
 | **Billing/Payments** | Stripe, Laravel Cashier | `laravel/cashier: ^16.0` |
 | **Authorization** | RBAC, Permissions | `spatie/laravel-permission` |
 | **AI/LLM** | OpenAI adapter | `openai-php/laravel: ^0.17.0` |
@@ -56,7 +56,7 @@ The platform is built on the **Laravel React Starter Kit** base.
 | **Messaging** | Twilio, Mailgun | `twilio/sdk: ^8.0`, `symfony/mailgun-mailer: ^7.3` |
 | **Utilities** | PDF (Dompdf), Excel (Maatwebsite), QR Codes | `barryvdh/laravel-dompdf`, `maatwebsite/excel`, `chillerlan/php-qrcode` |
 
-## 📈 Results and Impact (Case Study Specific)
+## 📈 Results and Impact
 
 * **Secure & Scalable Tenancy:** Established a secure logical isolation model, enabling the onboarding of multiple MSPs and their hundreds of Companies without cross-tenant data leakage (deny-by-default logic).
 * **Accelerated LLM Feature Development:** The BrightAI toolkit provides a reusable, pre-audited integration layer, reducing the time-to-market for new AI-driven features like conversational assistants and content generation.
@@ -79,7 +79,7 @@ These instructions assume Docker (for Sail) and Node/NPM are installed.
     ```
 6.  Run the application in development mode (starts server, queue listener, logs, and Vite):
     ```bash
-    npm run dev
+    composer run dev
     ```
 7.  View the application at: `http://localhost:[port]` (typically `http://localhost:8000`)
 8.  Code format and style with strict types
@@ -94,7 +94,7 @@ This project is currently for internal development only. Please direct all bug r
 
 ## 👤 Author/Contact
 
-* **Saeed Hosan** - [Your Website/Portfolio Link]
+* **Saeed Hosan** 
 * appsaeed7@gmail.com
 * https://www.linkedin.com/in/saeedhosan
 
