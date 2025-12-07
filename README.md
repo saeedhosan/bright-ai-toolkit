@@ -46,7 +46,7 @@ The platform is built on the **Laravel React Starter Kit** base.
 | Category | Technology | Composer Package |
 | :--- | :--- | :--- |
 | **Backend** | PHP 8.2+, Laravel 12.x | `laravel/framework: ^12.0` |
-| **Frontend** | React, Inertia.js | `inertiajs/inertia-laravel: ^2.0` |
+| **Frontend** | Livwire | `livewire/livewire: ^3.0` |
 | **Database** | MySQL or PostgreSQL |  |
 | **Billing/Payments** | Stripe, Laravel Cashier | `laravel/cashier: ^16.0` |
 | **Authorization** | RBAC, Permissions | `spatie/laravel-permission` |
