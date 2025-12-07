@@ -64,10 +64,10 @@ The platform is built on the **Laravel React Starter Kit** base.
 
 ## ⚙️ Installation and Usage
 
-Note: The Installation and usage process are only available for Bright team.
+Note: The Installation and usage process are only available for Bright team. <br>
 These instructions assume Docker (for Sail) and Node/NPM are installed.
 
-1.  Clone the repository: `git clone [private]`
+1.  Clone the repository: `git clone [repo]`
 2.  Install PHP/Composer dependencies: `composer install`
 3.  Install JavaScript dependencies: `npm install`
 4.  Set up environment variables: `cp .env.example .env` and fill in secrets (DB, Stripe, OpenAI, etc.).
