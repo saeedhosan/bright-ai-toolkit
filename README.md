@@ -47,7 +47,7 @@ The platform is built on the **Laravel React Starter Kit** base.
 | :--- | :--- | :--- |
 | **Backend** | PHP 8.2+, Laravel 12.x | `laravel/framework: ^12.0` |
 | **Frontend** | Livwire | `livewire/livewire: ^3.0` |
-| **Database** | MySQL or PostgreSQL |  |
+| **Database** | MySQL & Sqlite |  |
 | **Billing/Payments** | Stripe, Laravel Cashier | `laravel/cashier: ^16.0` |
 | **Authorization** | RBAC, Permissions | `spatie/laravel-permission` |
 | **AI/LLM** | OpenAI adapter | `openai-php/laravel: ^0.17.0` |
