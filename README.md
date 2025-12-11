@@ -1,9 +1,9 @@
-# BrightAI Laravel — MSP Platform
+# BrightAI — Laravel MSP Platform
 
 
 ## 📝 Project Description
 
-BrightAI Laravel is a **developer-oriented toolkit** and **Managed Service Provider (MSP) platform** that integrates modern large-language-model (LLM) capabilities into scalable, multi-tenant Laravel applications. The core is a production-ready foundation for adding AI-driven features (chat, content generation, prompt orchestration) to web apps, while the overall platform provides a strict, logically-isolated hierarchy to serve **System Administrators**, **MSPs**, **Companies**, and **End Users (Clients)**.
+BrightAI is a **developer-oriented toolkit** and **Managed Service Provider (MSP) platform** that integrates modern large-language-model (LLM) capabilities into scalable, multi-tenant Laravel applications. The core is a production-ready foundation for adding AI-driven features (chat, content generation, prompt orchestration) to web apps, while the overall platform provides a strict, logically-isolated hierarchy to serve **System Administrators**, **MSPs**, **Companies**, and **End Users (Clients)**.
 
 The project's purpose is to offer a reusable, auditable, and extensible integration with LLM providers alongside robust subscription, billing, and white-labeling features for the MSP business model.
 
