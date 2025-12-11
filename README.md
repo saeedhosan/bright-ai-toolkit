@@ -3,7 +3,7 @@
 
 ## 📝 Project Description
 
-BrightAI is a **developer-oriented toolkit** and **Managed Service Provider (MSP) platform** that integrates modern large-language-model (LLM) capabilities into scalable, multi-tenant Laravel applications. The core is a production-ready foundation for adding AI-driven features (chat, content generation, prompt orchestration) to web apps, while the overall platform provides a strict, logically-isolated hierarchy to serve **System Administrators**, **MSPs**, **Companies**, and **End Users (Clients)**.
+BrightAI is a **business-oriented toolkit** and **Managed Service Provider (MSP) platform** that integrates modern LLM capabilities into scalable, multi-tenant Laravel applications. The core is a production-ready foundation for adding AI-driven features (chat, content generation, prompt orchestration) to web apps, while the overall platform provides a strict, logically-isolated hierarchy to serve **System Administrators**, **MSPs**, **Companies**, and **End Users (Clients)**.
 
 The project's purpose is to offer a reusable, auditable, and extensible integration with LLM providers alongside robust subscription, billing, and white-labeling features for the MSP business model.
 
@@ -18,7 +18,7 @@ The project addresses two main challenges:
 
 The solution is a cohesive platform built on the **Laravel 12** framework and modern architectural patterns:
 
-* **Strict Multi-Tenancy:** Implemented using a **Tenant Context Resolver** that determines the MSP and Company scope from the request (domain/session/token) before executing any business logic. All tenant-owned tables are scoped with a mandatory `company_id` column, and Eloquent models use a `TenantScoped` trait to enforce this isolation by default.
+* **Strict Multi-Tenancy:** Implemented using a **Tenant Context Resolver** that determines the MSP and Company scope from the request (domain, session, token) before executing any business logic. All tenant-owned tables are scoped with a mandatory `company_id` column, and Eloquent models use a `TenantScoped` trait to enforce this isolation by default.
 * **Modular Architecture:** The platform is segmented into an **Experience Layer** (portals/APIs), an **Application Layer** (business modules like Billing, Entitlements, Ticketing), and an **Infrastructure Layer** (DB, Queue, Caching).
 * **LLM Toolkit:** A provider-agnostic LLM integration layer with centralized **prompt templates**, conversation session management, and robust observability (prompt logging, usage metrics) is provided to safely embed AI features.
 * **Monetization Engine:** Uses **Laravel Cashier** for subscriptions and **Stripe** for payment processing and tax/invoicing, supporting complex tiered, seat-based, and metered billing models.
@@ -26,10 +26,10 @@ The solution is a cohesive platform built on the **Laravel 12** framework and mo
 ## 🚀 Features
 
 ### MSP Platform (Core)
-* **Hierarchical Isolation:** System → MSP → Company → Client with deny-by-default cross-MSP access and granular **RBAC** (using `spatie/laravel-permission`).
+* **Hierarchical Isolation:** System → MSP → Company → Client with deny-by-default cross-MSP access and granular **RBAC** (using `spatie/laravel-permission` and Laravel Gate, Policies).
 * **Product & Service Catalog:** Centralized management of products, plans, features, and bundles.
 * **Subscription & Billing Engine:** Supports tiered, **seat-based**, and **metered usage** billing, proration, multi-currency, taxes/VAT (via Stripe), and dunning.
-* **White-Labeling:** Custom logo, colors, and domain (CNAME) per MSP and optionally per Company.
+* **White-Labeling:** Custom logo, colors, and settings per MSP and optionally per Company.
 * **Ticketing & SLA:** Support system with policies, assignment, and MSP-scoped views.
 * **Audit Logging:** Immutable store for every mutation with actor and scope (`msp_id`, `company_id`).
 
@@ -41,7 +41,7 @@ The solution is a cohesive platform built on the **Laravel 12** framework and mo
 
 ## 🛠️ Tech Stack
 
-The platform is built on the **Laravel React Starter Kit** base.
+The platform is built on the **Laravel Livewire StarterKit** base.
 
 | Category | Technology | Composer Package |
 | :--- | :--- | :--- |
@@ -59,13 +59,12 @@ The platform is built on the **Laravel React Starter Kit** base.
 ## 📈 Results and Impact
 
 * **Secure & Scalable Tenancy:** Established a secure logical isolation model, enabling the onboarding of multiple MSPs and their hundreds of Companies without cross-tenant data leakage (deny-by-default logic).
-* **Accelerated LLM Feature Development:** The BrightAI toolkit provides a reusable, pre-audited integration layer, reducing the time-to-market for new AI-driven features like conversational assistants and content generation.
+* **Accelerated AI Feature Development:** The BrightAI toolkit provides a reusable, pre-audited integration layer, reducing the time-to-market for new AI-driven features like campaign questions-target AI voice cold call and content generation.
 * **Robust Monetization:** Full support for complex MSP-specific billing (tiered, seat, metered usage) using the proven Laravel Cashier/Stripe integration, ensuring accurate revenue tracking.
 
 ## ⚙️ Installation and Usage
 
 Note: The Installation and usage process are only available for Bright team. <br>
-These instructions assume Docker (for Sail) and Node/NPM are installed.
 
 1.  Clone the repository: `git clone [repo]`
 2.  Install PHP/Composer dependencies: `composer install`
